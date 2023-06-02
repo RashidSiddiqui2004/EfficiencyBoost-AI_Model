@@ -7,7 +7,7 @@ import base64
 # open('tutorialWorkEff.mp4', 'rb') video_bytes = video_file.read()
 
 def playTut():
-    st.title("Not Sure How to use this AI Model?")
+     st.title("Not Sure How to use this AI Model?")
 
     font_size = 24
 
@@ -44,5 +44,12 @@ def playTut():
 
         st.title(f"[Watch the Video Tutorial]({video_link})")
 
+        with open("HackathonWorkEffcy.pdf", "rb") as file:
+            file_data2 = file.read()
 
+        # Convert file data to base64
+        encoded_file2 = base64.b64encode(file_data2).decode('utf-8')
 
+        # Create a download link
+        href = f'<h2><a href="data:application/pdf;base64,{encoded_file2}" download="file.pdf">Understanding the problem my website solves</a></h2>'
+        st.markdown(href, unsafe_allow_html=True)
