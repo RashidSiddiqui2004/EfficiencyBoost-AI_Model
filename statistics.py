@@ -12,11 +12,6 @@ def stats():
 
     st.title('General Employee Productivity Statistics')
 
-    # Create an unordered list
-    # items = ["Item 1", "Item 2", "Item 3"]
-    # st.write("Here is an unordered list:")
-    # st.write(items)
-
     st.markdown(
         """
         <style>
@@ -61,8 +56,6 @@ def stats():
 
     st.title("Credits for Statistics [Quixy](https://quixy.com/)")
 
-    # st.title('Credits for Statistics : {}'.format('quixy.com'))
-
-
+   
 
 
